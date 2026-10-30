@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#102e2a">
+	<meta name="description" content="Explore the pressures affecting the Nairobi River, their impact on people and nature, and practical ways to help protect the river basin.">
+	<title>Nairobi River | A living river, a shared responsibility</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
+
+	<header class="site-header">
+		<a class="brand" href="#top" aria-label="Nairobi River home">
+			<span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36"><path d="M4 10c6 0 6 6 12 6s6-6 12-6h4M4 18c6 0 6 6 12 6s6-6 12-6h4M4 26c6 0 6 6 12 6s6-6 12-6h4"/></svg></span>
+			<span>RIVER<span class="brand-light">/</span>WATCH</span>
+		</a>
+		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+		<nav class="site-nav" id="site-nav" aria-label="Main navigation">
+			<a href="#story">The river</a>
+			<a href="#pressures">What affects it</a>
+			<a href="#impact">Why it matters</a>
+			<a href="#solutions">Solutions</a>
+			<a class="nav-action" href="#take-action">Take action <span aria-hidden="true">↗</span></a>
+		</nav>
+	</header>
+
+	<main id="main">
+		<section class="hero" id="top" aria-labelledby="hero-title">
+			<div class="hero-photo" role="img" aria-label="A river winding through a green landscape"></div>
+			<div class="hero-shade"></div>
+			<div class="hero-content">
+				<p class="eyebrow hero-eyebrow"><span class="live-dot"></span> NAIROBI RIVER BASIN · KENYA</p>
+				<h1 id="hero-title">A river is<br>never <em>just</em> a river.</h1>
+				<p class="hero-copy">It carries the life of a city. What flows into Nairobi River shapes the health of communities, wildlife, and the water downstream.</p>
+				<a class="button button-light" href="https://www.greenpeace.org/africa/en/blog/53320/a-new-dawn-for-nairobi-rivers/" target="_blank" rel="noopener noreferrer">Follow the river <span aria-hidden="true">↗</span></a>
+			</div>
+			<div class="hero-caption"><span>01 / 04</span><span>THE NAIROBI RIVER BASIN</span></div>
+			<div class="hero-note"><span class="note-line"></span><span>From the highlands<br>through the heart of the city</span></div>
+		</section>
+
+		<section class="intro section-pad" id="story" aria-labelledby="story-title">
+			<div class="section-kicker"><span>01</span><span class="kicker-rule"></span><span>THE LIVING SYSTEM</span></div>
+			<div class="intro-grid">
+				<h2 id="story-title">A watershed<br>connects <em>us all.</em></h2>
+				<div class="intro-copy">
+					<p class="intro-lead">Nairobi River is part of a wider network of streams and tributaries that flow through Kenya’s capital and onward to the Athi River system.</p>
+					<p>These waterways run beside homes, markets, roads, and green spaces. That closeness makes them vulnerable to pollution, but it also means local choices can make a difference.</p>
+					<a class="text-link" href="#pressures">See what enters the river <span aria-hidden="true">↘</span></a>
+				</div>
+			</div>
+			<div class="river-line" aria-label="The river's journey from upper catchment through the city and downstream">
+				<div class="river-stage"><span class="stage-dot"></span><span class="stage-label">UPPER CATCHMENT</span><span class="stage-copy">Rainfall gathers</span></div>
+				<div class="river-track"><span></span></div>
+				<div class="river-stage"><span class="stage-dot"></span><span class="stage-label">NAIROBI</span><span class="stage-copy">Streams meet the city</span></div>
+				<div class="river-track"><span></span></div>
+				<div class="river-stage"><span class="stage-dot stage-dot-last"></span><span class="stage-label">DOWNSTREAM</span><span class="stage-copy">Water keeps moving</span></div>
+			</div>
+		</section>
+
+		<section class="pressures section-pad" id="pressures" aria-labelledby="pressures-title">
+			<div class="pressure-heading">
+				<div>
+					<div class="section-kicker section-kicker-light"><span>02</span><span class="kicker-rule"></span><span>FOLLOW THE SOURCE</span></div>
+					<h2 id="pressures-title">What flows<br><em>into the river?</em></h2>
+				</div>
+				<p class="pressure-intro">Pollution comes from many places. Select a pressure to see how it reaches the river system.</p>
+			</div>
+			<div class="pressure-explorer">
+				<div class="pressure-list" role="tablist" aria-label="Pollution pressures">
+					<button class="pressure-tab is-active" id="tab-waste" type="button" role="tab" aria-selected="true" aria-controls="pressure-panel" data-pressure="waste"><span>01</span><span>Mismanaged waste</span><span aria-hidden="true">↗</span></button>
+					<button class="pressure-tab" id="tab-sewage" type="button" role="tab" aria-selected="false" aria-controls="pressure-panel" data-pressure="sewage" tabindex="-1"><span>02</span><span>Wastewater &amp; sewage</span><span aria-hidden="true">↗</span></button>
+					<button class="pressure-tab" id="tab-runoff" type="button" role="tab" aria-selected="false" aria-controls="pressure-panel" data-pressure="runoff" tabindex="-1"><span>03</span><span>Urban runoff</span><span aria-hidden="true">↗</span></button>
+					<button class="pressure-tab" id="tab-industry" type="button" role="tab" aria-selected="false" aria-controls="pressure-panel" data-pressure="industry" tabindex="-1"><span>04</span><span>Industrial discharge</span><span aria-hidden="true">↗</span></button>
+				</div>
+				<article class="pressure-panel" id="pressure-panel" role="tabpanel" aria-labelledby="tab-waste" tabindex="0">
+					<div class="panel-image panel-image-waste" aria-hidden="true"><span class="image-label">CITY · STREAM · RIVER</span></div>
+					<div class="panel-copy"><p class="panel-index" id="pressure-index">01 / A VISIBLE PRESSURE</p><h3 id="pressure-name">Waste travels.</h3><p id="pressure-description">When collection is missed or disposal is informal, litter can wash from streets and open spaces into drainage channels, then into nearby streams.</p><div class="pathway"><span>STREET</span><span aria-hidden="true">→</span><span>DRAIN</span><span aria-hidden="true">→</span><span>RIVER</span></div></div>
+				</article>
+			</div>
+			<p class="section-footnote">Pollution sources vary across the basin. This overview is educational and does not represent live monitoring data.</p>
+		</section>
+
+		<section class="impact section-pad" id="impact" aria-labelledby="impact-title">
+			<div class="impact-top">
+				<div class="section-kicker"><span>03</span><span class="kicker-rule"></span><span>THE RIPPLE EFFECT</span></div>
+				<p class="impact-aside">One river. Many lives connected to it.</p>
+			</div>
+			<div class="impact-grid">
+				<div class="impact-heading"><h2 id="impact-title">Water quality<br>is <em>community</em><br>health.</h2><p>River health is about more than the water itself. Explore the connections.</p></div>
+				<div class="impact-explorer">
+					<div class="impact-tabs" role="tablist" aria-label="River impacts">
+						<button type="button" class="impact-tab is-active" role="tab" aria-selected="true" aria-controls="impact-panel" id="impact-tab-people" data-impact="people">People</button>
+						<button type="button" class="impact-tab" role="tab" aria-selected="false" aria-controls="impact-panel" id="impact-tab-nature" data-impact="nature" tabindex="-1">Nature</button>
+						<button type="button" class="impact-tab" role="tab" aria-selected="false" aria-controls="impact-panel" id="impact-tab-city" data-impact="city" tabindex="-1">The city</button>
+					</div>
+					<div class="impact-panel" id="impact-panel" role="tabpanel" aria-labelledby="impact-tab-people" tabindex="0" aria-live="polite">
+						<span class="impact-number" id="impact-number">01</span>
+						<div><h3 id="impact-heading">Everyday wellbeing</h3><p id="impact-description">People live, work, and move alongside the river. Cleaner waterways support safer surroundings and healthier neighbourhoods, especially for communities closest to the banks.</p></div>
+						<span class="impact-symbol" id="impact-symbol" aria-hidden="true">↗</span>
+					</div>
+					<div class="impact-quote"><span aria-hidden="true">“</span><p>A healthier river starts upstream, but its benefits belong to everyone downstream.</p></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="solutions section-pad" id="solutions" aria-labelledby="solutions-title">
+			<div class="solutions-heading">
+				<div>
+					<div class="section-kicker"><span>04</span><span class="kicker-rule"></span><span>THE WAY FORWARD</span></div>
+					<h2 id="solutions-title">Cleaner water<br>takes <em>all of us.</em></h2>
+				</div>
+				<p>Lasting progress combines reliable services, responsible industry, and care for the river corridor.</p>
+			</div>
+			<div class="solutions-grid">
+				<article class="solution-item">
+					<span class="solution-number">01</span>
+					<div><h3>Keep waste out of drains</h3><p>Improve regular waste collection, make disposal accessible, and prevent litter from reaching storm drains and streams.</p><span class="solution-lead">WASTE SERVICES · COMMUNITIES</span></div>
+				</article>
+				<article class="solution-item">
+					<span class="solution-number">02</span>
+					<div><h3>Treat wastewater properly</h3><p>Extend sewer connections, maintain infrastructure, and ensure wastewater treatment systems operate effectively.</p><span class="solution-lead">PUBLIC INFRASTRUCTURE · UTILITIES</span></div>
+				</article>
+				<article class="solution-item">
+					<span class="solution-number">03</span>
+					<div><h3>Control industrial discharge</h3><p>Require appropriate treatment, carry out regular inspections, and follow up on pollution reports and compliance.</p><span class="solution-lead">INDUSTRY · REGULATORS</span></div>
+				</article>
+				<article class="solution-item">
+					<span class="solution-number">04</span>
+					<div><h3>Restore and monitor riverbanks</h3><p>Protect riverside vegetation, reduce erosion, and monitor water quality so changes can guide action.</p><span class="solution-lead">COUNTIES · RESEARCHERS · RESIDENTS</span></div>
+				</article>
+			</div>
+			<a class="text-link solutions-link" href="#take-action">Choose one action to start <span aria-hidden="true">↘</span></a>
+		</section>
+
+		<section class="action section-pad" id="take-action" aria-labelledby="action-title">
+			<div class="action-art" aria-hidden="true"><div class="art-ring art-ring-one"></div><div class="art-ring art-ring-two"></div><div class="art-river"></div><span class="art-coordinate">01°17′S<br>36°49′E</span></div>
+			<div class="action-content">
+				<div class="section-kicker section-kicker-light"><span>05</span><span class="kicker-rule"></span><span>SMALL ACTS ADD UP</span></div>
+				<h2 id="action-title">Make room<br>for a <em>cleaner river.</em></h2>
+				<p>Choose one action to start with. Your pledge stays on this device.</p>
+				<form class="pledge-form" id="pledge-form">
+					<label class="select-label" for="pledge-select">MY FIRST STEP</label>
+					<div class="select-wrap"><select id="pledge-select" name="pledge"><option value="keep-litter">Keep litter out of drains and streams</option><option value="reduce-plastic">Reduce single-use plastic where I can</option><option value="report-dumping">Report illegal dumping through official local channels</option><option value="join-cleanup">Join a community river clean-up</option><option value="share-awareness">Share what I learned about the river</option></select><span aria-hidden="true">⌄</span></div>
+					<button class="button button-coral" type="submit"><span id="pledge-button-label">Save my pledge</span><span aria-hidden="true">↗</span></button>
+					<p class="pledge-status" id="pledge-status" aria-live="polite"></p>
+				</form>
+			</div>
+		</section>
+
+		<section class="knowledge section-pad" aria-labelledby="knowledge-title">
+			<div class="knowledge-copy"><div class="section-kicker"><span>06</span><span class="kicker-rule"></span><span>LEARN AS YOU GO</span></div><h2 id="knowledge-title">How well do you<br>know the <em>river?</em></h2><p>Answer 20 questions about water pollution, river health, and the choices that can make a difference.</p></div>
+			<div class="quiz" id="quiz">
+				<p class="quiz-label">QUICK CHECK <span id="quiz-count">01 / 20</span></p>
+				<div class="quiz-progress" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="20" aria-valuenow="0"><span id="quiz-progress-fill"></span></div>
+				<h3 id="quiz-question" aria-live="polite">Which route can carry litter from a street to a river?</h3>
+				<div class="quiz-options" id="quiz-options" role="group" aria-label="Choose an answer"></div>
+				<p class="quiz-feedback" id="quiz-feedback" aria-live="polite">Select an answer to check.</p>
+				<div class="quiz-controls">
+					<button type="button" class="quiz-next" id="quiz-next" hidden>Next question <span aria-hidden="true">→</span></button>
+					<button type="button" class="quiz-restart" id="quiz-restart" hidden>Try again <span aria-hidden="true">↻</span></button>
+				</div>
+				<p class="quiz-result" id="quiz-result" aria-live="polite" hidden></p>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36"><path d="M4 10c6 0 6 6 12 6s6-6 12-6h4M4 18c6 0 6 6 12 6s6-6 12-6h4M4 26c6 0 6 6 12 6s6-6 12-6h4"/></svg></span><span>RIVER<span class="brand-light">/</span>WATCH</span></a>
+		<p>For the river, and everyone connected to it.</p>
+		<button class="project-like" id="project-like" type="button" aria-pressed="false" aria-label="Like my project. 0 likes">
+			<span class="like-heart" id="like-heart" aria-hidden="true">♡</span>
+			<span class="like-label" id="like-label">Like my project</span>
+			<span class="like-count" id="like-count">0</span>
+		</button>
+		<a class="back-top" href="#top">BACK TO TOP <span aria-hidden="true">↑</span></a>
+		<span class="footer-note">An independent educational project · Nairobi, Kenya</span>
+	</footer>
+</body>
+</html>
